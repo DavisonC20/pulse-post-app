@@ -3,6 +3,7 @@ import React from 'react'
 
 function page() {
   return (
+    /* Se rederige a la page posts */
     redirect('/posts')
   )
 }

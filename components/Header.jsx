@@ -5,13 +5,13 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 function Header({ navLinks }) {
-  const pathname = usePathname();
+  const pathname = usePathname(); // se captura el pathname para ubicarnos en que ruta se encuentra
   return (
     <div className="bg-teal-600 p-4 flex justify-between items-center">
       <Link href="/">
-        <h1 className="text-white text-2xl font-bold">Pulse Post</h1>
+        <h1 className="text-white text-3xl font-bold">Pulse Post</h1>
       </Link>
-      <nav className="space-x-4">
+      <nav className="space-x-5 mr-4">
         <Link
           href="/"
           className={

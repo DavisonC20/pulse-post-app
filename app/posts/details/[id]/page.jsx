@@ -8,7 +8,7 @@ async function Details({ params }) {
   const dataDetails = await getDetails(params.id);
   const dataComments = await getComments(params.id);
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center m-2">
       <div className="max-w-2xl">
         <h4 className="leading-5 text-gray-500 mt-3 ml-2">Detalle del Post</h4>
         <CardPost

@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
+//layout para cargar las paginas 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,9 +16,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main>
-        {children}
-        </main>
+        <main>{children}</main>
+        <footer class="bg-gray-800 text-white py-4">
+          <div class="container mx-auto text-center">
+            <p class="text-sm">
+              Desarrollado por <span class="font-bold">Davison Cañaveral ❤️</span>
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
